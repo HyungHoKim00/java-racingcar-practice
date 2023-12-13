@@ -17,4 +17,9 @@ public class OutputView {
     public void printProgress(String progress) {
         System.out.println(progress);
     }
+
+    public void printWinners(String winners) {
+        System.out.println();
+        System.out.println(winners);
+    }
 }
