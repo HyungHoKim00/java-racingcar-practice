@@ -8,7 +8,6 @@ public class CarController {
     private final InputView inputView;
     private final OutputView outputView;
     private Cars cars;
-    private int tries;
 
     public CarController(InputView inputView, OutputView outputView) {
         this.inputView = inputView;
@@ -17,7 +16,7 @@ public class CarController {
 
     public void run() {
         this.cars = validateCars();
-        this.tries = validateTries();
+        int tries = validateTries();
         outputView.printProgressStartMessage();
         for (int i = 0; i < tries; i++) {
             race();
